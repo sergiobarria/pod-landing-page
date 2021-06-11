@@ -12,8 +12,18 @@ $breakpoints-up: (
   '2xl': '90em',
 );
 
+$max-heights: (
+  'lg': '55em',
+);
+
 @mixin breakpoint-up($size) {
   @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin max-height($height) {
+  @media (max-height: map-get($max-heights, $height )) {
     @content;
   }
 }

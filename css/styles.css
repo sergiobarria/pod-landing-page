@@ -269,6 +269,12 @@ body {
   }
 }
 
+@media (max-height: 55em) {
+  .dots-pattern {
+    display: none;
+  }
+}
+
 @media (min-width: 90em) {
   .dots-pattern {
     right: 0;

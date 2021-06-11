@@ -42,6 +42,10 @@
     bottom: 0;
   }
 
+  @include max-height(lg) {
+    display: none;
+  }
+
   @include breakpoint-up('2xl') {
     right: 0;
     left: auto;
