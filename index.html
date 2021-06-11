@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Pod request access landing page</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <header class="logo-container">
+        <img src="/assets/desktop/logo.svg" alt="logo" />
+      </header>
+
+      <section class="hero">
+        <h1 class="hero-title">
+          <span>Publish your podcasts</span> everywhere.
+        </h1>
+        <p>
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+
+        <div class="cta-desktop">
+          <form id="desktop-form" class="cta-desktop-form">
+            <input
+              id="desktop-input"
+              type="text"
+              placeholder="Email address"
+              class="cta-desktop-input"
+            />
+            <button class="cta-desktop-input-btn">Request Access</button>
+            <p id="error-tag" class="error hidden">
+              Oops! Please check your email
+            </p>
+          </form>
+        </div>
+
+        <div class="hero-brands flex flex-items-center flex-justify-between">
+          <img src="/assets/desktop/spotify.svg" alt="spotify logo" />
+          <img src="/assets/desktop/apple-podcast.svg" alt="spotify logo" />
+          <img src="/assets/desktop/google-podcasts.svg" alt="spotify logo" />
+          <img src="/assets/desktop/pocket-casts.svg" alt="spotify logo" />
+        </div>
+
+        <div class="cta">
+          <form id="mobile-form">
+            <input
+              id="mobile-input"
+              type="text"
+              placeholder="Email address"
+              class="cta-input"
+            />
+            <button class="btn">Request Access</button>
+            <p id="error-tag-mobile" class="error hidden">
+              Oops! Please check your email
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <img
+        src="/assets/desktop/bg-pattern-dots.svg"
+        alt="dots pattern"
+        class="dots-pattern"
+      />
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

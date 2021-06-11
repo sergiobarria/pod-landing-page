@@ -1,0 +1,166 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 300;
+
+  @include breakpoint-up(lg) {
+    background-color: $darkBlue;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  height: 100vh;
+  position: relative;
+
+  background-image: url('/assets/mobile/image-host.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @include breakpoint-up(lg) {
+    background-color: $darkBlue;
+    background-image: url('/assets/tablet/image-host.jpg');
+    background-repeat: no-repeat;
+    background-size: 491px 767px;
+    background-position: top right;
+  }
+
+  @include breakpoint-up(xl) {
+    background-image: url('/assets/desktop/image-host.jpg');
+    background-repeat: no-repeat;
+    background-size: 888px 640px;
+    background-position: top 130px right;
+  }
+}
+
+.cta {
+  @include breakpoint-up(lg) {
+    display: none;
+  }
+
+  &-input {
+    width: 100%;
+    padding: 14px 32px;
+    border-radius: 100rem;
+    background-color: $darkGrey;
+    border: none;
+    color: $white;
+    margin-bottom: 1rem;
+
+    @include breakpoint-up(md) {
+      width: 80%;
+    }
+  }
+
+  &-input::placeholder {
+    color: $lightGray;
+    font-weight: 700;
+  }
+
+  &-input:focus {
+    outline: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.cta-desktop {
+  @include breakpoint-up(sm) {
+    display: none;
+  }
+
+  @include breakpoint-up(lg) {
+    display: block;
+  }
+
+  &-form {
+    width: 427px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 64px;
+  }
+
+  &-input {
+    width: 100%;
+    padding: 20.5px 32px;
+    border-radius: 100rem;
+    border: none;
+    background-color: $darkGrey;
+    color: $white;
+
+    &-btn {
+      background-color: $emeraldGreen;
+      border: none;
+      padding: 15.5px 29px;
+      border-radius: 100rem;
+      font-weight: 700;
+      font-family: 'Chivo', sans-serif;
+      color: $darkBlue;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $emeraldGreenLight;
+      }
+    }
+  }
+
+  &-input::placeholder {
+    color: $lightGray;
+    font-weight: 700;
+  }
+
+  &-input:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  background-color: $emeraldGreen;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 100rem;
+  font-weight: 700;
+  font-family: 'Chivo', sans-serif;
+  width: 100%;
+  color: $darkBlue;
+  cursor: pointer;
+
+  @include breakpoint-up(md) {
+    width: 80%;
+  }
+}
+
+// Flexbox utilities
+.flex {
+  display: flex;
+
+  &-items-center {
+    align-items: center;
+  }
+
+  &-justify-between {
+    justify-content: space-between;
+  }
+
+  &-justify-around {
+    justify-content: space-around;
+  }
+}

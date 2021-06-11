@@ -1,0 +1,50 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $darkBlue;
+  opacity: 0.85;
+  z-index: 10;
+
+  @include breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.logo-container {
+  position: absolute;
+  top: 3.875rem;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+
+  @include breakpoint-up(lg) {
+    top: 3.125rem;
+    left: 2.4375rem;
+    text-align: left;
+    width: 80%;
+  }
+
+  @include breakpoint-up('2xl') {
+    left: 165px;
+  }
+}
+
+.dots-pattern {
+  display: none;
+
+  @include breakpoint-up(lg) {
+    display: block;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+  }
+
+  @include breakpoint-up('2xl') {
+    right: 0;
+    left: auto;
+    bottom: 78px;
+  }
+}

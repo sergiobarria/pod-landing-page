@@ -1,0 +1,112 @@
+.hero {
+  position: absolute;
+  top: 10.375rem;
+  text-align: center;
+  width: 87.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  @include breakpoint-up(lg) {
+    background-color: $darkBlue;
+    top: 16.125rem;
+    left: 2.4375rem;
+    height: 31.8125rem;
+    transform: none;
+    width: 39.6875rem;
+    text-align: left;
+  }
+
+  @include breakpoint-up(xl) {
+    top: 261px;
+  }
+
+  @include breakpoint-up('2xl') {
+    left: 165px;
+  }
+
+  &-title {
+    span {
+      color: $emeraldGreen;
+    }
+
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $white;
+    font-size: $font-md;
+    line-height: $line-height-md;
+
+    @include breakpoint-up(lg) {
+      font-size: $font-lg;
+      line-height: $line-height-lg;
+      margin-top: 93px;
+    }
+  }
+
+  p {
+    font-size: $font-sm;
+    line-height: $line-height-sm;
+    color: $lightGray;
+    padding: 0 1rem;
+
+    @include breakpoint-up(lg) {
+      padding: 0;
+      font-size: $font-body;
+      width: 445px;
+    }
+  }
+
+  &-brands {
+    margin: 2rem 0;
+
+    @include breakpoint-up(lg) {
+      width: 536px;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &-brands img {
+    &:nth-child(1) {
+      width: 3.5rem;
+    }
+
+    &:nth-child(2) {
+      width: 2.8125rem;
+    }
+
+    &:nth-child(3) {
+      width: 4.5625rem;
+    }
+
+    &:nth-child(4) {
+      width: 4.8125rem;
+    }
+
+    @include breakpoint-up(lg) {
+      &:nth-child(1) {
+        width: 6rem;
+      }
+
+      &:nth-child(2) {
+        width: 4.875rem;
+      }
+
+      &:nth-child(3) {
+        width: 7.8125rem;
+      }
+
+      &:nth-child(4) {
+        width: 8.0625rem;
+      }
+    }
+  }
+
+  .error {
+    color: $error;
+    font-size: $font-xs;
+    font-weight: 700;
+    margin: 0 32px;
+  }
+}
