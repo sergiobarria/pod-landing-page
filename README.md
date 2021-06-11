@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/html-scss-javascript-jUmyrEKe2)
+- Live Site URL: [URL here](https://pod-music-sergiobarria.netlify.app/)
 
 ## My process
 
@@ -45,6 +45,7 @@ Users should be able to:
 - SCSS
 - Flexbox
 - CSS Grid
+- JavaScript
 - Mobile-first workflow
 
 ### What I learned
